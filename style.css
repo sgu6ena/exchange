@@ -1,0 +1,65 @@
+body {
+    background-color: #20639b;
+}
+
+.show-modal {
+    width: 88px;
+    font-size: 18px;
+    color: #f6C55d;
+    border-radius: 20px;
+    border: none;
+    background: #173f5f;
+    padding: 16px 26px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 50px;
+    display: inline-flex;
+    transition: 0.3s;
+}
+
+.button-item {
+    fill: #f6C55d;
+    color: #f6C55d;
+    align-items: center;
+}
+
+.show-modal:hover .button-text {
+    display: block;
+    color: #f6C55d;
+}
+
+.show-modal:hover .icon {
+    fill: #eb553b;
+    transition: 2s;
+}
+
+.show-modal:hover {
+    width: 200px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 30px 0px rgba(60, 174, 163, 1);
+}
+
+.icon {
+    fill: #f6C55d;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+.icon-menu {
+    display: flex;
+}
+
+.icon-close {
+    display: none;
+}
+
+.button-item:hover {
+    fill: black;
+    color: black;
+}
+
+.button-text {
+    display: none;
+    padding-left: 15px;
+}
