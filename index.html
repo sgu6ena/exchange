@@ -5,39 +5,260 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        app
-    </title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>Money EXchange</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/popper.min.js"></script>
 </head>
 
 <body>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center">
+                <div class="col col-lg-3">
+                    <a href="#" class="header-link">
+                        <img src="./img/logo.svg" alt="moneyexchange" class="header-logo">
+                    </a>
+                </div>
+                <!-- /.col-lg-2 -->
+                <div class=" col col-lg-6">
+                    <nav>
+                        <ul class="navigation d-flex justify-content-center  align-items-center">
+                            <li class="navigation-item">
+                                <a href="#" class="navigation-link">
+                                Компания
+                            </a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#" class="navigation-link">
+                                Блог
+                            </a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#" class="navigation-link">
+                                Контакты
+                            </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /.col-lg-7 -->
+                <div class="col col-lg-3 d-flex justify-content-end d-flex align-items-center">
+                    <a href="#" class="login-link">
+                        Войти
+                    </a>
+                    <button class="button">Регистрация</button>
+                </div>
+                <!-- /.col-lg-3 -->
+            </div>
+        </div>
+    </header>
+    <section class="calc">
+        <div class="container">
+            <span class="calc-header">
+                Мультивалютный <br> обменный сервис 24/7
+            </span>
+            <span class="calc-info">
+                Быстрый обмен без скрытых комиссий
+            </span>
 
+            <div class="row d-flex justify-content-center calc-change align-self-end">
+                <div class="col-4">
+                    <span class="calc-change-title">Вы отдаете</span>
+                    <span class="calc-change-sum">Сумма</span>
+                    <div class="calc-input d-flex align-items-center">
+                        <input type="text" class="input-sum" placeholder="1000,00">
+                        <img src="img/bank.png" alt="" class="icon-change bank-logo">
+                        <select class="form-select form-select-lg select-currency">
+                            <option value="EUR">EUR</option>
+                            <option value="USD">USD</option>
+                            <option value="RUB">RUB</option>
+                        </select>
 
+                    </div>
+                </div>
+                <div class="col-1 d-flex justify-content-center align-self-end"><img src="img/arrows.svg" alt="" class=" arrows"></div>
+                <div class="col-4">
+                    <span class="calc-change-title">Вы получаете</span>
+                    <span class="comission">c учетом комиссии ПС (0.5%)</span>
+                    <span class="calc-change-sum">Сумма</span>
+                    <div class=" calc-input d-flex align-items-center">
+                        <input type="text" class="input-sum " placeholder="970,00">
+                        <img src="img/money.png" alt="" class="icon-change money-logo">
+                        <select class="select-currency">
+                            <option value="EUR">EUR</option>
+                            <option value="USD">USD</option>
+                            <option value="RUB">RUB</option>
+                        </select>
 
-    <button class="show-modal">
-      <div class="button-item icon-close">
-        <svg class="icon">
-          <use xlink:href="./img/icons.svg#close_black"></use>
-        </svg>
-        <span class="button-text">удалить</span>
-      </div>
+                    </div>
 
-      <div class="button-item icon-menu">
-        <svg class="icon">
-          <use xlink:href="./img/icons.svg#menu_black"></use>
-        </svg>
-        <span class="button-text">добавить</span>
-      </div>
+                </div>
+                <div class="col-2 align-self-end">
+                    <button class="button-change">Обменять</button>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <section class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 p-3">
+                    <div class="img-wrapper d-flex align-items-center"> <img src="img/info-1.png" alt="Безопасность" class="info-image"></div>
 
+                    <h3 class="info-title">Безопасность</h3>
+                    <p class="info-description ">Усиленная безопасность ваших обменов, усиленная безопасность от мошенников!</p>
+                </div>
+                <div class="col-4 p-3">
+                    <div class="img-wrapper d-flex align-items-center"><img src="img/info-2.png" alt="Реферальная система" class="info-image">
+                    </div>
+                    <h3 class="info-title">Реферальная система</h3>
+                    <p class="info-description ">На сервисе работает партнерская программа , за каждый обмен приведенного вами клиента, вы получаете 0.5% с нашей прибыли.</p>
+                </div>
+                <div class="col-4 p-3">
+                    <div class="img-wrapper d-flex align-items-center"><img src="img/info-3.png" alt="Онлайн поддержка" class="info-image">
+                    </div>
+                    <h3 class="info-title">Онлайн поддержка</h3>
+                    <p class="info-description">Четыре вида поддержки для наших клиентов: Телеграмм канал, E-mail поддержка, и мобильный номер (Viber).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="history ">
+        <div class="container-fluid history-wrapper ">
+            <div class="row  d-flex align-items-center">
+                <div class="col-5 history-content">
+                    <h2 class="history-title ">Сервис обмена электронных валют с 5-летней историей</h2>
+                    <p class="history-description">За время работы мы приобрели репутацию проверенного партнера и делаем все возможное, чтобы ваши впечатления от нашего сервиса были только благоприятными.</p>
+                </div>
+                <!-- /.col-6 -->
+                <div class="col-7">
+                    <div class="image-history-wrapper"> <img src="img/history.png" alt="" class="image-history"></div>
 
-    </button>
+                </div>
+                <!-- /.col-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </section>
 
-    <svg class="icon">
-      <use xlink:href="./img/icons.svg#chevron_right_black"></use>
-    </svg>
+    <section class="currency-reserve">
+        <div class="container">
+            <h2 class="reserve-title">Резерв валюты</h2>
+            <div class="row">
+                <div class="col-3 d-flex  align-items-center">
+                    <div class="currency-icon yandex "> <img src="img/yandex.png" alt="" class="icon-currency"></div>
+                    <!-- /.currency-icon -->
+                    <div class="currency">
+                        <p class="currency-name ">Yandex RUB</p>
+                        <!-- /.currency-name -->
+                        <p class="rate">900549</p>
+                        <!-- /.rate -->
+                    </div>
+                    <!-- /.currency -->
+                </div>
+                <!-- /.col-3 d-flex align-items-center -->
+                <div class="col-3 d-flex align-items-center">
+                    <div class="currency-icon ethereum">
+                        <img src="img/etherium.png" alt="" class="icon-currency">
+                    </div>
+                    <!-- /.currency-icon -->
+                    <div class="currency ">
+                        <p class="currency-name ">Ethereum ETH</p>
+                        <!-- /.currency-name -->
+                        <p class="rate">123</p>
+                        <!-- /.rate -->
+                    </div>
+                    <!-- /.currency -->
+                </div>
+                <!-- /.col-3 d-flex align-items-center -->
+                <div class="col-3 d-flex align-items-center">
+                    <div class="currency-icon bitcoin"><img src="img/bitcoin.png" alt="" class="icon-currency"></div>
+                    <!-- /.currency-icon -->
+                    <div class="currency ">
+                        <p class="currency-name ">Bitcoin BTC</p>
+                        <!-- /.currency-name -->
+                        <p class="rate">0.63333439</p>
+                        <!-- /.rate -->
+                    </div>
+                    <!-- /.currency -->
+                </div>
+                <!-- /.col-3 d-flex align-items-center -->
+                <div class="col-3 d-flex align-items-center">
+                    <div class="currency-icon sberbank"><img src="img/sberpank.png" alt="" class="icon-currency"></div>
+                    <!-- /.currency-icon -->
+                    <div class="currency ">
+                        <p class="currency-name ">Сбербанк RUB</p>
+                        <!-- /.currency-name -->
+                        <p class="rate">142666</p>
+                        <!-- /.rate -->
+                    </div>
+                    <!-- /.currency -->
+                </div>
+                <!-- /.col-3 d-flex align-items-center -->
+                <div class="col-3 d-flex align-items-center">
+                    <div class="currency-icon privat"><img src="img/private.png" alt="" class="icon-currency"></div>
+                    <!-- /.currency-icon -->
+                    <div class="currency ">
+                        <p class="currency-name ">Приват 24 UAH</p>
+                        <!-- /.currency-name -->
+                        <p class="rate">1426 66</p>
+                        <!-- /.rate -->
+                    </div>
+                    <!-- /.currency -->
+                </div>
+                <!-- /.col-3 d-flex align-items-center -->
+                <div class="col-3 d-flex align-items-center">
+                    <div class="currency-icon paypal"><img src="img/paypal.png" alt="" class="icon-currency"></div>
+                    <!-- /.currency-icon -->
+                    <div class="currency  align-items-center">
+                        <p class="currency-name ">PayPal USD</p>
+                        <!-- /.currency-name -->
+                        <p class="rate">5139.58</p>
+                        <!-- /.rate -->
+                    </div>
+                    <!-- /.currency -->
+                </div>
+                <!-- /.col-3 d-flex align-items-center -->
+                <div class="col-3 d-flex align-items-center">
+                    <div class="currency-icon pm d-flex align-items-center"><img src="img/PM.png" alt="" class="icon-currency"></div>
+                    <!-- /.currency-icon -->
+                    <div class="currency">
+                        <p class="currency-name">PM USD</p>
+                        <!-- /.currency-name -->
+                        <p class="rate">3192.22 </p>
+                        <!-- /.rate -->
+                    </div>
+                    <!-- /.currency -->
+                </div>
+                <!-- /.col-3 d-flex align-items-center -->
+                <div class="col-3 d-flex align-items-center">
+                    <div class="currency-icon qiwi"><img src="img/qiwi.png" alt="" class="icon-currency"></div>
+                    <!-- /.currency-icon -->
+                    <div class="currency">
+                        <p class="currency-name ">Qiwi RUB</p>
+                        <!-- /.currency-name -->
+                        <p class="rate">99243.321</p>
+                        <!-- /.rate -->
+                    </div>
+                    <!-- /.currency -->
+                </div>
+                <!-- /.col-3 d-flex align-items-center -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </section>
 
+    <sections class="clients">
+
+    </sections>
 </body>
 
 </html>
