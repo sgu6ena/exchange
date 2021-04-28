@@ -1,16 +1,30 @@
     * {
         margin: 0;
         padding: 0;
-        margin-bottom: 0;
     }
     
     body {
         font-family: 'Rubik', sans-serif;
     }
     
-    header,
-    footer {
-        padding: 20px;
+    .header,
+    .footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .col {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
     
      :active,
@@ -444,7 +458,7 @@
         margin-bottom: 50px;
     }
     
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
         header,
         footer {
             padding: 20px 0;
@@ -468,11 +482,11 @@
         .exchange {
             text-align: center;
             margin-top: 50px;
-            padding: 12px;
+            /* padding: 12px; */
         }
     }
     
-    @media (max-width: 576px) {
+    @media (max-width: 575px) {
         .calc-container {
             margin: 0;
             width: 90%;
