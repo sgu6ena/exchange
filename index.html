@@ -19,14 +19,14 @@
 <body>
     <header class="header">
         <div class="container-fluid">
-            <div class="row d-flex align-items-center">
-                <div class="col col-lg-3">
+            <div class="row d-flex align-items-center ">
+                <div class=" col-lg-3 col-md-3 col-sm-12 d-flex justify-content-center">
                     <a href="#" class="header-link">
                         <img src="./img/logo.svg" alt="moneyexchange" class="header-logo">
                     </a>
                 </div>
                 <!-- /.col-lg-2 -->
-                <div class=" col col-lg-6">
+                <div class=" col-lg-6  col-md-6 col-sm-6 col-xs-12">
                     <nav>
                         <ul class="navigation d-flex justify-content-center  align-items-center">
                             <li class="navigation-item">
@@ -48,7 +48,7 @@
                     </nav>
                 </div>
                 <!-- /.col-lg-7 -->
-                <div class="col col-lg-3 d-flex justify-content-end d-flex align-items-center">
+                <div class=" col-lg-3  col-md-3 col-sm-6 col-xs-12 d-flex justify-content-center d-flex align-items-center">
                     <a href="#" class="login-link">
                         Войти
                     </a>
@@ -68,13 +68,13 @@
             </span>
 
             <div class="row d-flex justify-content-center calc-change align-self-end">
-                <div class="col-lg-4 col-md-8">
+                <div class="col-xl-4 col-md-8 col-sm-12">
                     <span class="calc-change-title">Вы отдаете</span>
                     <span class="calc-change-sum">Сумма</span>
                     <div class="calc-input d-flex align-items-center">
                         <input type="text" class="input-sum" placeholder="1000,00">
                         <img src="img/bank.png" alt="" class="icon-change bank-logo">
-                        <select class="form-select form-select-lg select-currency">
+                        <select class="select-currency">
                             <option class="select-currency-option" value="EUR">EUR</option>
                             <option value="USD">USD</option>
                             <option value="RUB">RUB</option>
@@ -83,8 +83,9 @@
                     </div>
                     <hr class="calc-line" />
                 </div>
-                <div class="col-lg-1 col-md-4 d-flex justify-content-center align-self-end"><img src="img/arrows.svg" alt="" class=" arrows"></div>
-                <div class="col-lg-4 col-md-8 ">
+                <div class="col-xl-1 col-md-4 col-sm-12 d-flex justify-content-center align-self-end">
+                    <img src="img/arrows.svg" alt="" class=" arrows"></div>
+                <div class="col-xl-4 col-md-8 col-sm-12">
                     <span class="calc-change-title">Вы получаете</span>
                     <span class="comission">c учетом комиссии ПС (0.5%)</span>
                     <span class="calc-change-sum">Сумма</span>
@@ -100,7 +101,7 @@
                     </div>
                     <hr class="calc-line">
                 </div>
-                <div class="col-lg-3 col-md-4 align-self-end">
+                <div class="col-xl-2 col-md-4 col-sm-12 d-flex justify-content-center align-self-end">
                     <button class="button-change">Обменять</button>
                 </div>
             </div>
@@ -111,37 +112,40 @@
     <section class="info">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-9 p-3">
-                    <div class="img-wrapper d-flex align-items-center"> <img src="img/info-1.png" alt="Безопасность" class="info-image"></div>
-
-                    <h3 class="info-title">Безопасность</h3>
+                <div class="col-lg-4 col-md-9 p-3 info-item">
+                    <div class=" img-wrapper d-flex align-items-center ">
+                        <img src="img/info-1.png " alt="Безопасность " class="info-image ">
+                    </div>
+                    <h3 class="info-title ">Безопасность</h3>
                     <p class="info-description ">Усиленная безопасность ваших обменов, усиленная безопасность от мошенников!</p>
                 </div>
-                <div class="col-lg-4 col-md-9  p-3">
-                    <div class="img-wrapper d-flex align-items-center"><img src="img/info-2.png" alt="Реферальная система" class="info-image">
+                <div class="col-lg-4 col-md-9 p-3 info-item">
+                    <div class="img-wrapper d-flex align-items-center">
+                        <img src="img/info-2.png" alt="Реферальная система" class="info-image">
                     </div>
                     <h3 class="info-title">Реферальная система</h3>
                     <p class="info-description ">На сервисе работает партнерская программа, за каждый обмен приведенного вами клиента, вы получаете 0.5% с нашей прибыли.</p>
                 </div>
-                <div class="col-lg-4 col-md-9  p-3">
-                    <div class="img-wrapper d-flex align-items-center"><img src="img/info-3.png" alt="Онлайн поддержка" class="info-image">
+                <div class="col-lg-4 col-md-9  p-3 info-item">
+                    <div class=" img-wrapper d-flex align-items-center ">
+                        <img src="img/info-3.png " alt="Онлайн поддержка " class="info-image ">
                     </div>
-                    <h3 class="info-title">Онлайн поддержка</h3>
-                    <p class="info-description">Четыре вида поддержки для наших клиентов: Телеграмм канал, E-mail поддержка, и мобильный номер (Viber).</p>
+                    <h3 class="info-title ">Онлайн поддержка</h3>
+                    <p class="info-description ">Четыре вида поддержки для наших клиентов: Телеграмм канал, E-mail поддержка, и мобильный номер (Viber).</p>
                 </div>
             </div>
         </div>
     </section>
     <section class="history ">
         <div class="container history-wrapper ">
-            <div class="row  d-flex align-items-center">
-                <div class="col-lg-5  col-md-12 history-content">
+            <div class="row d-flex align-items-center ">
+                <div class="col-lg-5 col-md-12 history-content ">
                     <h2 class="history-title ">Сервис обмена электронных валют с 5-летней историей</h2>
-                    <p class="history-description">За время работы мы приобрели репутацию проверенного партнера и делаем все возможное, чтобы ваши впечатления от нашего сервиса были только благоприятными.</p>
+                    <p class="history-description ">За время работы мы приобрели репутацию проверенного партнера и делаем все возможное, чтобы ваши впечатления от нашего сервиса были только благоприятными.</p>
                 </div>
                 <!-- /.col-6 -->
-                <div class="col-lg-7 col-md-12">
-                    <div class="image-history-wrapper"> <img src="img/history.png" alt="" class="image-history"></div>
+                <div class="col-lg-7 col-md-12 ">
+                    <div class="image-history-wrapper "> <img src="img/history.png " alt=" " class="image-history "></div>
 
                 </div>
                 <!-- /.col-6 -->
@@ -150,103 +154,103 @@
         </div>
     </section>
 
-    <section class="currency-reserve">
-        <div class="container">
-            <h2 class="reserve-title">Резерв валюты</h2>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 d-flex currency-info align-items-center">
-                    <div class="currency-icon yandex "> <img src="img/yandex.png" alt="" class="icon-currency"></div>
+    <section class="currency-reserve ">
+        <div class="container ">
+            <h2 class="reserve-title ">Резерв валюты</h2>
+            <div class="row ">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 d-flex currency-info align-items-center ">
+                    <div class="currency-icon yandex "> <img src="img/yandex.png " alt=" " class="icon-currency "></div>
                     <!-- /.currency-icon -->
-                    <div class="currency">
+                    <div class="currency ">
                         <p class="currency-name ">Yandex RUB</p>
                         <!-- /.currency-name -->
-                        <p class="rate">900549</p>
+                        <p class="rate ">900549</p>
                         <!-- /.rate -->
                     </div>
                     <!-- /.currency -->
                 </div>
                 <!-- /.col-3 d-flex align-items-center -->
-                <div class="col-lg-3 col-md-6  col-sm-6 currency-info d-flex align-items-center">
-                    <div class="currency-icon ethereum">
-                        <img src="img/etherium.png" alt="" class="icon-currency">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 currency-info d-flex align-items-center ">
+                    <div class="currency-icon ethereum ">
+                        <img src="img/etherium.png " alt=" " class="icon-currency ">
                     </div>
                     <!-- /.currency-icon -->
                     <div class="currency ">
                         <p class="currency-name ">Ethereum ETH</p>
                         <!-- /.currency-name -->
-                        <p class="rate">123</p>
+                        <p class="rate ">123</p>
                         <!-- /.rate -->
                     </div>
                     <!-- /.currency -->
                 </div>
                 <!-- /.col-3 d-flex align-items-center -->
-                <div class="col-lg-3 col-md-6 col-sm-6  currency-info d-flex align-items-center">
-                    <div class="currency-icon bitcoin"><img src="img/bitcoin.png" alt="" class="icon-currency"></div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 currency-info d-flex align-items-center ">
+                    <div class="currency-icon bitcoin "><img src="img/bitcoin.png " alt=" " class="icon-currency "></div>
                     <!-- /.currency-icon -->
                     <div class="currency ">
                         <p class="currency-name ">Bitcoin BTC</p>
                         <!-- /.currency-name -->
-                        <p class="rate">0.63333439</p>
+                        <p class="rate ">0.63333439</p>
                         <!-- /.rate -->
                     </div>
                     <!-- /.currency -->
                 </div>
                 <!-- /.col-3 d-flex align-items-center -->
-                <div class="col-lg-3 col-md-6  col-sm-6  currency-info d-flex align-items-center">
-                    <div class="currency-icon sberbank"><img src="img/sberpank.png" alt="" class="icon-currency"></div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 currency-info d-flex align-items-center ">
+                    <div class="currency-icon sberbank "><img src="img/sberpank.png " alt=" " class="icon-currency "></div>
                     <!-- /.currency-icon -->
                     <div class="currency ">
                         <p class="currency-name ">Сбербанк RUB</p>
                         <!-- /.currency-name -->
-                        <p class="rate">142666</p>
+                        <p class="rate ">142666</p>
                         <!-- /.rate -->
                     </div>
                     <!-- /.currency -->
                 </div>
                 <!-- /.col-3 d-flex align-items-center -->
-                <div class="col-lg-3 col-md-6 col-sm-6  currency-info d-flex align-items-center">
-                    <div class="currency-icon privat"><img src="img/private.png" alt="" class="icon-currency"></div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 currency-info d-flex align-items-center ">
+                    <div class="currency-icon privat "><img src="img/private.png " alt=" " class="icon-currency "></div>
                     <!-- /.currency-icon -->
                     <div class="currency ">
                         <p class="currency-name ">Приват 24 UAH</p>
                         <!-- /.currency-name -->
-                        <p class="rate">1426 66</p>
+                        <p class="rate ">1426 66</p>
                         <!-- /.rate -->
                     </div>
                     <!-- /.currency -->
                 </div>
                 <!-- /.col-3 d-flex align-items-center -->
-                <div class="col-lg-3 col-md-6  col-sm-6 currency-info d-flex align-items-center">
-                    <div class="currency-icon paypal"><img src="img/paypal.png" alt="" class="icon-currency"></div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 currency-info d-flex align-items-center ">
+                    <div class="currency-icon paypal "><img src="img/paypal.png " alt=" " class="icon-currency "></div>
                     <!-- /.currency-icon -->
-                    <div class="currency  align-items-center">
+                    <div class="currency align-items-center ">
                         <p class="currency-name ">PayPal USD</p>
                         <!-- /.currency-name -->
-                        <p class="rate">5139.58</p>
+                        <p class="rate ">5139.58</p>
                         <!-- /.rate -->
                     </div>
                     <!-- /.currency -->
                 </div>
                 <!-- /.col-3 d-flex align-items-center -->
-                <div class="col-lg-3 col-md-6 col-sm-6  currency-info d-flex align-items-center">
-                    <div class="currency-icon pm d-flex align-items-center"><img src="img/PM.png" alt="" class="icon-currency"></div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 currency-info d-flex align-items-center ">
+                    <div class="currency-icon pm d-flex align-items-center "><img src="img/PM.png " alt=" " class="icon-currency "></div>
                     <!-- /.currency-icon -->
-                    <div class="currency">
-                        <p class="currency-name">PM USD</p>
+                    <div class="currency ">
+                        <p class="currency-name ">PM USD</p>
                         <!-- /.currency-name -->
-                        <p class="rate">3192.22 </p>
+                        <p class="rate ">3192.22 </p>
                         <!-- /.rate -->
                     </div>
                     <!-- /.currency -->
                 </div>
                 <!-- /.col-3 d-flex align-items-center -->
-                <div class="col-lg-3 col-md-6 col-sm-6  currency-info d-flex align-items-center">
-                    <div class="currency-icon qiwi"><img src="img/qiwi.png" alt="" class="icon-currency"></div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 currency-info d-flex align-items-center ">
+                    <div class="currency-icon qiwi "><img src="img/qiwi.png " alt=" " class="icon-currency "></div>
                     <!-- /.currency-icon -->
-                    <div class="currency">
+                    <div class="currency ">
                         <p class="currency-name ">Qiwi RUB</p>
                         <!-- /.currency-name -->
-                        <p class="rate">99243.321</p>
+                        <p class="rate ">99243.321</p>
                         <!-- /.rate -->
                     </div>
                     <!-- /.currency -->
@@ -257,23 +261,23 @@
         </div>
     </section>
 
-    <section class="clients">
-        <div class="container">
-            <h3 class="clients-title">Что клиенты говорят о нас</h3>
-            <div class="row">
-                <div class="col-lg-6 col-md-12 comment">
-                    <p class="clients-comment">Киви переправил деньги не на кошелек, а на номер МТС - будьте внимательны. Даже в этом случаи делают возврат и переводят на приват. Особая благодарность оператору Марии.</p>
+    <section class="clients ">
+        <div class="container ">
+            <h3 class="clients-title ">Что клиенты говорят о нас</h3>
+            <div class="row ">
+                <div class="col-lg-6 col-md-12 comment ">
+                    <p class="clients-comment ">Киви переправил деньги не на кошелек, а на номер МТС - будьте внимательны. Даже в этом случаи делают возврат и переводят на приват. Особая благодарность оператору Марии.</p>
                     <!-- /.clients-comment -->
-                    <span class="clients-name">Jacob Robertson</span>
-                    <span class="comment-date">20.02.2020, 12:10</span>
+                    <span class="clients-name ">Jacob Robertson</span>
+                    <span class="comment-date ">20.02.2020, 12:10</span>
 
                 </div>
                 <!-- /.col-6 -->
-                <div class="col-lg-6 col-md-12 comment">
-                    <p class="clients-comment">3-й раз выполняю обмен. Все как всегда на отлично! Транзакции выполняются в течение 15-20 минут - что очень быстро + лучший ценник!</p>
+                <div class="col-lg-6 col-md-12 comment ">
+                    <p class="clients-comment ">3-й раз выполняю обмен. Все как всегда на отлично! Транзакции выполняются в течение 15-20 минут - что очень быстро + лучший ценник!</p>
                     <!-- /.clients-comment -->
-                    <span class="clients-name">Morris Robertson</span>
-                    <span class="comment-date">17.02.2020, 18:51</span>
+                    <span class="clients-name ">Morris Robertson</span>
+                    <span class="comment-date ">17.02.2020, 18:51</span>
 
                 </div>
                 <!-- /.col-6 -->
@@ -283,50 +287,51 @@
     </section>
 
     <section class="start-exchange ">
-        <div class="container start-exchange-container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
-                    <div class="img-wrapper-exchange"> <img class="img-exchange" src="img/back-1.png" alt="" class="img-exchange"></div>
-
+        <div class="container start-exchange-container ">
+            <div class="row ">
+                <div class="col-lg-6 col-md-12 ">
+                    <div class="img-wrapper-exchange ">
+                        <img class="img-exchange " src="img/back-1.png " alt=" " class="img-exchange ">
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-12 exchange">
-                    <h3 class="exchange-title">Будем рады предоставить Вам качественный обмен валют на нашем сервисе!</h3>
-                    <p class="exchange-subtitle">Начните обмен прямо сейчас</p>
-                    <button class="button-exchange">Обменять</button>
+                <div class="col-lg-6 col-md-12 exchange ">
+                    <h3 class="exchange-title ">Будем рады предоставить Вам качественный обмен валют на нашем сервисе!</h3>
+                    <p class="exchange-subtitle ">Начните обмен прямо сейчас</p>
+                    <button class="button-exchange ">Обменять</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row d-flex align-items-center">
-                <div class="col-lg-3 col-md-6">
-                    <a href="#" class="header-link">
-                        <img src="./img/logo.svg" alt="moneyexchange" class="header-logo">
+    <footer class="footer ">
+        <div class="container-fluid ">
+            <div class="row d-flex align-items-center ">
+                <div class=" col-xl-3 col-lg-12 d-flex justify-content-center ">
+                    <a href="# " class="header-link ">
+                        <img src="./img/logo.svg " alt="moneyexchange " class="header-logo ">
                     </a>
                 </div>
                 <!-- /.col-lg-2 -->
-                <div class=" col-lg-6 col-md-12">
+                <div class=" col-xl-6 col-md-10 col-sm-12 d-flex justify-content-center ">
                     <nav>
-                        <ul class="navigation d-flex justify-content-between  align-items-center">
-                            <li class="navigation-item">
-                                <a href="#" class="navigation-link">
+                        <ul class="navigation d-flex align-items-center ">
+                            <li class="navigation-item ">
+                                <a href="# " class="navigation-link ">
                                 Карта сайта
                             </a>
                             </li>
-                            <li class="navigation-item">
-                                <a href="#" class="navigation-link">
+                            <li class="navigation-item ">
+                                <a href="# " class="navigation-link ">
                                 Предупреждение
                             </a>
                             </li>
-                            <li class="navigation-item">
-                                <a href="#" class="navigation-link">
+                            <li class="navigation-item ">
+                                <a href="# " class="navigation-link ">
                                 Правила сайта
                             </a>
                             </li>
-                            <li class="navigation-item">
-                                <a href="#" class="navigation-link">
+                            <li class="navigation-item ">
+                                <a href="# " class="navigation-link ">
                                 Обмен
                             </a>
                             </li>
@@ -334,12 +339,12 @@
                     </nav>
                 </div>
                 <!-- /.col-lg-7 -->
-                <div class="col col-lg-3 col-md-6 d-flex justify-content-end d-flex align-items-center px-5">
-                    <a href="#" class="social-link px-2">
-                        <img src="img/vk.png" alt="вконтакте" class="social">
+                <div class=" col-xl-3 col-md-2 col-sm-12 d-flex justify-content-center ">
+                    <a href="# " class="social-link px-2 ">
+                        <img src="img/vk.png " alt="вконтакте " class="social ">
                     </a>
-                    <a href="#" class="social-link px-2">
-                        <img src="img/instagram.png" alt="инстаграмм" class="social">
+                    <a href="# " class="social-link px-2 ">
+                        <img src="img/instagram.png " alt="инстаграмм " class="social ">
                     </a>
                 </div>
                 <!-- /.col-lg-3 -->
