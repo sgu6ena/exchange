@@ -13,20 +13,6 @@
         padding-bottom: 20px;
     }
     
-    .row {
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    
-    .col {
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    
      :active,
      :hover,
      :focus {
@@ -482,7 +468,7 @@
         .exchange {
             text-align: center;
             margin-top: 50px;
-            /* padding: 12px; */
+            padding: 12px;
         }
     }
     
