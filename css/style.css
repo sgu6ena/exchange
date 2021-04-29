@@ -158,8 +158,8 @@
     }
     
     .arrows {
-        margin-top: 25px;
-        margin-bottom: 15px;
+        margin-top: 40px;
+        /* margin-bottom: 15px; */
         padding-bottom: 15px;
     }
     
@@ -443,6 +443,12 @@
         margin-bottom: 50px;
     }
     
+    @media(max-width: 1199px) {
+        .calc-get {
+            padding-top: 30px;
+        }
+    }
+    
     @media (max-width: 991px) {
         .header,
         .footer {
@@ -474,7 +480,6 @@
     @media (max-width: 575px) {
         .calc-container {
             margin: 0;
-
         }
         .calc-change {
             padding: 15px;
