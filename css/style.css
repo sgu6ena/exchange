@@ -118,7 +118,7 @@
         font-size: 20px;
         line-height: 24px;
         letter-spacing: 0.015em;
-        color: rgb(164, 170, 191);
+        color: #4E5983;
         height: 50px;
         background: rgba(255, 255, 255, .0);
         border: none;
@@ -130,7 +130,7 @@
         line-height: 24px;
         letter-spacing: 0.015em;
         font-size: 18px;
-        color: #4E5983;
+        color: rgba(164, 170, 191, .6);
     }
     
     .select-currency {

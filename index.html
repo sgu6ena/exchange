@@ -62,7 +62,7 @@
     </header>
     <section class="calc">
         <h2 class="calc-header">
-            Мультивалютный <br> обменный сервис 24/7
+            Мультивалютный обменный сервис 24/7
         </h2>
         <h3 class="calc-info">
             Быстрый обмен без скрытых комиссий
@@ -75,12 +75,10 @@
                     <span class="calc-change-title">Вы отдаете</span>
                     <span class="calc-change-sum">Сумма</span>
                     <div class="calc-input d-flex align-items-center">
-                        <input type="text" class="input-sum" placeholder="1000,00">
+                        <input type="number " min="0" class="input-sum" id="giveMoney" placeholder="1000.00" pattern="\d+(\.\d{2})?">
                         <img src="img/bank.png" alt="" class="icon-change bank-logo">
-                        <select class="select-currency">
-                            <option class="select-currency-option" value="EUR">EUR</option>
-                            <option value="USD">USD</option>
-                            <option value="RUB">RUB</option>
+                        <select class="select-currency" id="giveCurrency">
+
                         </select>
 
                     </div>
@@ -93,12 +91,10 @@
                     <span class="comission">c учетом комиссии ПС (0.5%)</span>
                     <span class="calc-change-sum">Сумма</span>
                     <div class=" calc-input d-flex align-items-center">
-                        <input type="text" class="input-sum " placeholder="970,00">
+                        <input type="number" min="0" class="input-sum " id="getMoney" placeholder="970.00" pattern="\d+(\.\d{2})?">
                         <img src="img/money.png" alt="" class="icon-change money-logo">
-                        <select class="select-currency">
-                            <option value="EUR">EUR</option>
-                            <option value="USD">USD</option>
-                            <option value="RUB">RUB</option>
+                        <select class="select-currency" id="getCurrency">
+
                         </select>
                     </div>
                     <hr class="calc-line">
