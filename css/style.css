@@ -55,11 +55,6 @@
         padding-bottom: 120px;
     }
     
-    .calc-container::before {
-        margin: 0;
-        padding: 0;
-    }
-    
     .calc-header {
         padding-top: 113px;
         display: block;
@@ -475,16 +470,19 @@
             margin-top: 50px;
             padding: 12px;
         }
+        .img-wrapper-exchange {
+            display: none;
+        }
     }
     
     @media (max-width: 575px) {
         .calc-container {
             margin: 0;
+            padding: 0;
         }
         .calc-change {
             padding: 15px;
             margin: 0;
-            margin-left: 5px;
         }
         .currency-info {
             padding-left: 70px;
@@ -494,6 +492,17 @@
             font-size: 28px;
         }
         .input-sum {
-            width: 100px;
+            width: 150px;
+        }
+        .container {
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0
+        }
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+            ;
         }
     }
