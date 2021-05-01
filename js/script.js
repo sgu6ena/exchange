@@ -25,7 +25,7 @@ const currency = {
     },
 }
 
-const commission = 0.995;
+const commission = 0.005;
 
 //добавляем опции к селектам items - что добавляем, options - куда
 const addOptions = (items, options) => {
@@ -35,11 +35,18 @@ const addOptions = (items, options) => {
 addOptions(currency, $giveCurrency);
 addOptions(currency, $getCurrency);
 
-$buttonChange.addEventListener('click', () => {
+$giveMoney.addEventListener('input', () => {
     if ($giveMoney.value) {
-        $getMoney.value = $giveMoney.value * currency[$giveCurrency.value][$getCurrency.value] * commission;
+        $getMoney.value = ($giveMoney.value * currency[$giveCurrency.value][$getCurrency.value] * (1 - commission)).toFixed(2);
     } else {
         $getMoney.value = '';
     }
+})
 
-});
+$getMoney.addEventListener('input', () => {
+    if ($getMoney.value) {
+        $giveMoney.value = ($getMoney.value * currency[$getCurrency.value][$giveCurrency.value] * (1 + commission)).toFixed(2);
+    } else {
+        $giveMoney.value = '';
+    }
+})
