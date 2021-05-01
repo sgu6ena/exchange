@@ -4,6 +4,10 @@ const $buttonChange = document.querySelector('.button-change');
 const $giveCurrency = document.querySelector('#giveCurrency');
 const $getCurrency = document.querySelector('#getCurrency');
 
+
+const $modal = document.getElementById("myModal");
+const $close = document.getElementsByClassName("close")[0];
+
 //курсы валют
 const currency = {
     EUR: {
@@ -31,10 +35,20 @@ const commission = 0.005;
 const addOptions = (items, options) => {
     Object.entries(items).forEach(([key]) => options.insertAdjacentHTML('beforeend', `<option value="${key}">${key}</option> `));
 };
-//заполняем валюты из курсов валют
-addOptions(currency, $giveCurrency);
-addOptions(currency, $getCurrency);
 
+//открывается модальное окно
+$buttonChange.addEventListener('click', () => {
+    $modal.style.display = "block";
+});
+
+//закрытие модалки
+window.addEventListener('click', (event) => {
+    if (event.target == $modal || event.target == $close) {
+        $modal.style.display = "none";
+    }
+});
+
+//обмен валюты: сумма, валютаИЗ, валютаВ, комиссия
 const changeMoney = (giveMoney, giveCurrency, getCurrency, commission) => {
     if (giveMoney) {
         return (giveMoney * currency[giveCurrency][getCurrency] * commission).toFixed(2);
@@ -45,15 +59,41 @@ const changeMoney = (giveMoney, giveCurrency, getCurrency, commission) => {
 }
 
 
+//заполняем валюты из курсов валют
+addOptions(currency, $giveCurrency);
+addOptions(currency, $getCurrency);
+
+//пересчет при вводе суммы в вы отдаете
 $giveMoney.addEventListener('input', () => {
     $getMoney.value = changeMoney($giveMoney.value, $giveCurrency.value, $getCurrency.value, (1 - commission))
 });
+//пересчет при смене валют
 $giveCurrency.addEventListener('input', () => {
     $getMoney.value = changeMoney($giveMoney.value, $giveCurrency.value, $getCurrency.value, (1 - commission))
 });
-$getMoney.addEventListener('input', () => {
-    $giveMoney.value = changeMoney($getMoney.value, $getCurrency.value, $giveCurrency.value, (1 + commission))
-});
+
 $getCurrency.addEventListener('input', () => {
     $getMoney.value = changeMoney($giveMoney.value, $giveCurrency.value, $getCurrency.value, (1 - commission))
 });
+//пересчет при вводе суммы в вы получаете
+$getMoney.addEventListener('input', () => {
+    $giveMoney.value = changeMoney($getMoney.value, $getCurrency.value, $giveCurrency.value, (1 + commission))
+});
+
+
+
+
+
+const getCurrency = () => {
+    curencyURL = 'https://www.cbr-xml-daily.ru/daily_json.js';
+    fetch(curencyURL)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            console.log(data);
+        });
+
+
+}
+getCurrency();

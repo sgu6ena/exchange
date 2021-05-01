@@ -75,7 +75,7 @@
                     <span class="calc-change-title">Вы отдаете</span>
                     <span class="calc-change-sum">Сумма</span>
                     <div class="calc-input d-flex align-items-center">
-                        <input type="number" min="0" class="input-sum" id="giveMoney" placeholder="1000.00" pattern="\d+(\.\d{2})?">
+                        <input type="number " min="0" class="input-sum" id="giveMoney" placeholder="0" pattern="\d+(\.\d{2})?">
                         <img src="img/bank.png" alt="" class="icon-change bank-logo">
                         <select class="select-currency" id="giveCurrency">
 
@@ -91,7 +91,7 @@
                     <span class="comission">c учетом комиссии ПС (0.5%)</span>
                     <span class="calc-change-sum">Сумма</span>
                     <div class=" calc-input d-flex align-items-center">
-                        <input type="number" min="0" class="input-sum " id="getMoney" placeholder="970.00" pattern="\d+(\.\d{2})?">
+                        <input type="number" min="0" class="input-sum " id="getMoney" placeholder="0" pattern="\d+(\.\d{2})?">
                         <img src="img/money.png" alt="" class="icon-change money-logo">
                         <select class="select-currency" id="getCurrency">
 
@@ -349,6 +349,40 @@
             </div>
         </div>
     </footer>
+
+    <!-- Модальном окно -->
+    <div id="myModal" class="modal">
+
+        <!-- Модальное содержание -->
+        <div class="modal-content">
+            <div class="modal-wrapper">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Номер кошелька
+                    </p>
+                    <input type="text" class="input numer-yandex">
+                    <p>
+                        Имя
+                    </p>
+                    <input type="text" class="input name">
+                    <p>Фамилия</p>
+                    <input type="text" class="input surname">
+                </div>
+                <div class="modal-footer d-flex align-items-center justify-content-around">
+                    <button type="button" class="button button-modal " data-dismiss="modal">Отменить</button>
+                    <button type="button" class="button button-modal">Обменять</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
 </body>
 
 </html>

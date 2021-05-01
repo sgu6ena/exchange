@@ -506,3 +506,97 @@
             ;
         }
     }
+    /* Модальный (фон) */
+    
+    .modal {
+        display: none;
+        /* Скрыто по умолчанию */
+        position: fixed;
+        /* Оставаться на месте */
+        z-index: 1;
+        /* Сидеть на вершине */
+        padding-top: 100px;
+        /* Расположение коробки */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Полная ширина */
+        height: 100%;
+        /* Полная высота */
+        overflow: auto;
+        /* Включите прокрутку, если это необходимо */
+        background-color: rgb(0, 0, 0);
+        /* Цвет запасной вариант  */
+        background-color: rgba(0, 0, 0, 0.6);
+        /*Черный с непрозрачностью */
+    }
+    /* Модальное содержание */
+    
+    .close {
+        color: darkgray;
+        background: transparent;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        border: none;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    /* Модальный заголовок */
+    
+    .button-modal {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 700;
+        border: none;
+        color: #fff;
+        background: linear-gradient(140.59deg, #562EC2 29.59%, #A07EFE 73.59%);
+        opacity: 0.8;
+        border-radius: 9px;
+        cursor: pointer;
+    }
+    
+    .modal-content {
+        font-weight: 300;
+        font-size: 20px;
+        background: #fff;
+        margin: auto;
+        position: relative;
+        padding: 30px;
+        border: none;
+        width: 400px;
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+    }
+    /* Добавить анимация */
+    
+    @keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+    
+    .modal-title {
+        margin: 15px;
+    }
+    
+    .modal-body {
+        padding: 15px;
+    }
+    
+    .input {
+        border: lightblue 1px solid;
+        border-radius: 10px;
+        height: 35px;
+        width: 300px;
+    }
