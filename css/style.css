@@ -533,7 +533,7 @@
     /* Модальное содержание */
     
     .close {
-        color: darkgray;
+        color: #562EC2;
         background: transparent;
         float: right;
         font-size: 28px;
@@ -555,7 +555,7 @@
         font-weight: 700;
         border: none;
         color: #fff;
-        background: linear-gradient(140.59deg, #562EC2 29.59%, #A07EFE 73.59%);
+        background: #562EC2;
         opacity: 0.8;
         border-radius: 9px;
         cursor: pointer;
@@ -595,8 +595,8 @@
     }
     
     .input {
-        border: lightblue 1px solid;
+        border: #562EC2 1px solid;
         border-radius: 10px;
         height: 35px;
-        width: 300px;
+        width: 380px;
     }
