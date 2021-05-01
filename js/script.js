@@ -35,18 +35,25 @@ const addOptions = (items, options) => {
 addOptions(currency, $giveCurrency);
 addOptions(currency, $getCurrency);
 
-$giveMoney.addEventListener('input', () => {
-    if ($giveMoney.value) {
-        $getMoney.value = ($giveMoney.value * currency[$giveCurrency.value][$getCurrency.value] * (1 - commission)).toFixed(2);
+const changeMoney = (giveMoney, giveCurrency, getCurrency, commission) => {
+    if (giveMoney) {
+        return (giveMoney * currency[giveCurrency][getCurrency] * commission).toFixed(2);
     } else {
-        $getMoney.value = '';
-    }
-})
+        return '';
 
-$getMoney.addEventListener('input', () => {
-    if ($getMoney.value) {
-        $giveMoney.value = ($getMoney.value * currency[$getCurrency.value][$giveCurrency.value] * (1 + commission)).toFixed(2);
-    } else {
-        $giveMoney.value = '';
     }
-})
+}
+
+
+$giveMoney.addEventListener('input', () => {
+    $getMoney.value = changeMoney($giveMoney.value, $giveCurrency.value, $getCurrency.value, (1 - commission))
+});
+$giveCurrency.addEventListener('input', () => {
+    $getMoney.value = changeMoney($giveMoney.value, $giveCurrency.value, $getCurrency.value, (1 - commission))
+});
+$getMoney.addEventListener('input', () => {
+    $giveMoney.value = changeMoney($getMoney.value, $getCurrency.value, $giveCurrency.value, (1 + commission))
+});
+$getCurrency.addEventListener('input', () => {
+    $getMoney.value = changeMoney($giveMoney.value, $giveCurrency.value, $getCurrency.value, (1 - commission))
+});
