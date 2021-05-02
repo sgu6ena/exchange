@@ -103,8 +103,6 @@ window.addEventListener('click', (event) => {
             $modal.style.display = "none";
         } else {
             $modalText.forEach(item => item.style.color = "red");
-
-
         }
 
     }
@@ -144,18 +142,19 @@ $getMoney.addEventListener('input', () => {
 
 
 
+//scroll smooth - плавная прокрутка
 
+{
+    const scrollLinks = document.querySelectorAll('button.scroll-link');
 
-const getCurrency = () => {
-    curencyURL = 'https://www.cbr-xml-daily.ru/daily_json.js';
-    fetch(curencyURL)
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            console.log(data);
+    for (const scrollLink of scrollLinks) {
+        scrollLink.addEventListener('click', event => {
+            event.preventDefault();
+            const id = scrollLink.getAttribute('href');
+            setTimeout(1000, document.querySelector(id).scrollIntoView({
+                behavior: 'smooth', //плавная
+                block: 'start', //до какого момента крутить
+            }))
         });
-
-
+    }
 }
-getCurrency();
