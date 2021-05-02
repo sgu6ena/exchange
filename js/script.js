@@ -70,7 +70,7 @@ const currency = {
         MLD: 1.13,
         UAH: 1.21,
         RUP: 1,
-    }
+    },
 }
 
 const commission = 0.005;

@@ -7,6 +7,10 @@
         font-family: 'Rubik', sans-serif;
     }
     
+    button:hover {
+        box-shadow: 0 0 10px rgba(160, 126, 224, 0.5);
+    }
+    
     .header,
     .footer {
         padding-top: 20px;
@@ -41,11 +45,14 @@
         border: none;
         padding: 14px 18px;
         border-radius: 9px;
-        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 16px;
         color: #4E5983;
         cursor: pointer;
+    }
+    
+    .button:active {
+        background: lavender;
     }
     
     .calc {
@@ -178,10 +185,19 @@
         color: #fff;
         width: 157px;
         height: 55px;
-        background: linear-gradient(140.59deg, #562EC2 29.59%, #A07EFE 73.59%);
+        background: linear-gradient(140.59deg, #562EC2 29.59%, #a07efe 73.59%);
         opacity: 0.8;
         border-radius: 9px;
         cursor: pointer;
+        transition: ease-in-out;
+    }
+    
+    .button-change:hover {
+        box-shadow: 0 0 10px rgba(160, 126, 224, 0.5);
+    }
+    
+    .button-change:active {
+        opacity: 1;
     }
     /** info **/
     
@@ -424,18 +440,27 @@
     }
     
     .button-exchange {
-        background: rgba(255, 255, 255, 1);
+        background: rgba(255, 255, 255);
+        opacity: .9;
         border-radius: 12px;
         margin-top: 50px;
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
         text-align: center;
-        color: #9F7DFD;
+        color: #562EC2;
         padding: 25px 50px;
         border: none;
         cursor: pointer;
         margin-bottom: 50px;
+    }
+    
+    .button-exchange:hover {
+        box-shadow: 0 0 10px rgba(255, 255, 255, .8);
+    }
+    
+    .button-exchange:active {
+        opacity: 1;
     }
     
     @media(max-width: 1199px) {
