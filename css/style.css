@@ -424,7 +424,7 @@
     }
     
     .button-exchange {
-        background-color: rbga(255, 255, 255, .8);
+        background: rgba(255, 255, 255, 1);
         border-radius: 12px;
         margin-top: 50px;
         font-weight: 500;
