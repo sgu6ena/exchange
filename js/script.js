@@ -7,44 +7,88 @@ const $getCurrency = document.querySelector('#getCurrency');
 
 const $modal = document.getElementById("myModal");
 const $close = document.getElementsByClassName("close")[0];
+const $buttonModalChange = document.querySelector('.button-modal-change');
+const $buttonCancel = document.querySelector('.button-cancel');
+const $wallet = document.querySelector('.wallet');
+const $name = document.querySelector('.name');
+const $surname = document.querySelector('.surname');
 
 //курсы валют
 const currency = {
     EUR: {
+        title: 'евро',
         USD: 1.21,
         RUB: 90.29,
+        MLD: 21.39,
+        RUP: 19.45,
         EUR: 1,
     },
 
     USD: {
+        title: 'америкаснкий доллар',
         RUB: 74.36,
         EUR: 0.82,
+        MLD: 17.80,
+        RUP: 16.5,
         USD: 1,
     },
 
     RUB: {
+        title: 'российский рубль',
         USD: 0.011,
         EUR: 0.013,
+        MLD: 0.24,
+        RUP: 0.2145,
         RUB: 1,
     },
+    MLD: {
+        title: 'молдавский лей',
+        USD: 0.011,
+        EUR: 0.013,
+        RUB: 4.26,
+        RUP: 0.92,
+        MLD: 1,
+    },
+    RUP: {
+        title: 'приднестровский рубль',
+        USD: 0.06,
+        EUR: 0.05,
+        RUB: 4.66,
+        MLD: 1.13,
+        RUP: 1,
+    }
 }
 
 const commission = 0.005;
 
 //добавляем опции к селектам items - что добавляем, options - куда
 const addOptions = (items, options) => {
-    Object.entries(items).forEach(([key]) => options.insertAdjacentHTML('beforeend', `<option value="${key}">${key}</option> `));
+    Object.entries(items).forEach(([key, value]) => options.insertAdjacentHTML('beforeend', `<option value="${key}" title="${value.title}">${key}</option> `));
 };
 
 //открывается модальное окно
 $buttonChange.addEventListener('click', () => {
-    $modal.style.display = "block";
+    if (getMoney.value) {
+        $modal.style.display = "block";
+    }
+
 });
 
 //закрытие модалки
 window.addEventListener('click', (event) => {
-    if (event.target == $modal || event.target == $close) {
+    if (event.target == $modal || event.target == $close || event.target == $buttonCancel) {
         $modal.style.display = "none";
+    }
+    if (event.target == $buttonModalChange) {
+        if ($wallet.value && $name.value && $surname.value) {
+            alert('Обмен произведен!');
+            $giveMoney.value = '';
+            $getMoney.value = '';
+            $modal.style.display = "none";
+        } else {
+            alert('Заполните все поля для обмена');
+        }
+
     }
 });
 

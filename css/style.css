@@ -503,7 +503,12 @@
         .row {
             margin-left: 0;
             margin-right: 0;
-            ;
+        }
+        .comment {
+            padding-right: 0px;
+        }
+        .navigation {
+            flex-direction: column;
         }
     }
     /* Модальный (фон) */
@@ -598,5 +603,4 @@
         border: #562EC2 1px solid;
         border-radius: 10px;
         height: 35px;
-       
     }
