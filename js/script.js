@@ -5,8 +5,8 @@ const $giveCurrency = document.querySelector('#giveCurrency');
 const $getCurrency = document.querySelector('#getCurrency');
 
 
-const $modal = document.getElementById("myModal");
-const $close = document.getElementsByClassName("close")[0];
+const $modal = document.querySelector('#myModal');
+const $close = document.querySelector('.close');
 const $buttonModalChange = document.querySelector('.button-modal-change');
 const $buttonCancel = document.querySelector('.button-cancel');
 const $wallet = document.querySelector('.wallet');
