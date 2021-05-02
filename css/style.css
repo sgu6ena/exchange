@@ -11,6 +11,10 @@
         box-shadow: 0 0 10px rgba(160, 126, 224, 0.5);
     }
     
+    a:hover {
+        color: #000;
+    }
+    
     .header,
     .footer {
         padding-top: 20px;
@@ -532,7 +536,7 @@
         .comment {
             padding-right: 0px;
         }
-        .navigation {
+        .footer-navigation .navigation {
             flex-direction: column;
         }
     }
@@ -601,7 +605,14 @@
         border: none;
         width: 300px;
         animation-name: animatetop;
-        animation-duration: 0.4s;
+        animation-duration: 0.8s;
+    }
+    
+    .modal-title {
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     /* Добавить анимация */
     

@@ -12,6 +12,8 @@ const $buttonCancel = document.querySelector('.button-cancel');
 const $wallet = document.querySelector('.wallet');
 const $name = document.querySelector('.name');
 const $surname = document.querySelector('.surname');
+const $modalTitle = document.querySelector('.modal-title');
+const $modalText = document.querySelectorAll('.modal-text');
 
 //курсы валют
 const currency = {
@@ -84,8 +86,8 @@ const addOptions = (items, options) => {
 $buttonChange.addEventListener('click', () => {
     if (getMoney.value) {
         $modal.style.display = "block";
+        $modalTitle.innerHTML = `Вы меняете ${$giveMoney.value} ${$giveCurrency.value} на ${$getMoney.value} ${$getCurrency.value}`;
     }
-
 });
 
 //закрытие модалки
@@ -100,7 +102,9 @@ window.addEventListener('click', (event) => {
             $getMoney.value = '';
             $modal.style.display = "none";
         } else {
-            alert('Заполните все поля для обмена');
+            $modalText.forEach(item => item.style.color = "red");
+
+
         }
 
     }
