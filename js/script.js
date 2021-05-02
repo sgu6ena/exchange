@@ -16,45 +16,59 @@ const $surname = document.querySelector('.surname');
 //курсы валют
 const currency = {
     EUR: {
-        title: 'евро',
+        title: 'Евро',
         USD: 1.21,
         RUB: 90.29,
         MLD: 21.39,
         RUP: 19.45,
+        UAH: 33.53,
         EUR: 1,
     },
 
     USD: {
-        title: 'америкаснкий доллар',
+        title: 'Доллар США',
         RUB: 74.36,
         EUR: 0.82,
         MLD: 17.80,
         RUP: 16.5,
+        UAH: 27.9,
         USD: 1,
     },
 
     RUB: {
-        title: 'российский рубль',
+        title: 'Рубль РФ',
         USD: 0.011,
         EUR: 0.013,
         MLD: 0.24,
         RUP: 0.2145,
+        UAH: 0.37,
         RUB: 1,
     },
     MLD: {
-        title: 'молдавский лей',
+        title: 'Молдавский лей',
         USD: 0.011,
         EUR: 0.013,
         RUB: 4.26,
         RUP: 0.92,
+        UAH: 1.58,
         MLD: 1,
     },
-    RUP: {
-        title: 'приднестровский рубль',
+    UAH: {
+        title: 'Украинская гривна',
         USD: 0.06,
         EUR: 0.05,
+        RUB: 2.7,
+        MLD: 0.64,
+        RUP: 0.72,
+        UAH: 1,
+    },
+    RUP: {
+        title: 'Приднестровский рубль',
+        USD: 0.036,
+        EUR: 0.03,
         RUB: 4.66,
         MLD: 1.13,
+        UAH: 1.21,
         RUP: 1,
     }
 }
